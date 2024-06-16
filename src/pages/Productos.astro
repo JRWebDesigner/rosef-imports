@@ -1,0 +1,17 @@
+---
+import IniProductos from "../components/Productos_Components/IniProductos.astro";
+import Layout from "../layouts/Layout.astro";
+import Catalogo from '../components/Productos_Components/Catalogo.astro';
+---
+<Layout title="Productos">
+        <IniProductos/>
+        <Catalogo />
+</Layout>
+
+<script>
+    const navMobileBorder=document.getElementById('nav-mobile-ul');
+    const navBorder=document.getElementById('nav-ul-comp');
+    navMobileBorder.children[2].classList.add('border-b-2');
+    navBorder.children[2].classList.add('border-b-4');
+    //navBorder.children[2].classList.add('border-red-400');
+</script>

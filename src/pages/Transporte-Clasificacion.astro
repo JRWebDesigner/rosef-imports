@@ -1,0 +1,190 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InicioSeccion from "../components/MiniComponets/InicioSeccion.astro";
+import ComponentesProductos from "../components/Productos_Components/ComponentesProductos.astro";
+import CompoChiq from "../components/Productos_Components/Compo_chiq.astro";
+---
+
+<Layout title="Productos">
+    <section
+        id="linkProd"
+        class="relative h-[30vh] lg:h-[80vh] w-full flex items-center justify-center text-white font-semibold"
+    >
+        <div class="absolute w-full h-full bg-[#000000ce]">
+            <img
+                class="w-full h-full object-cover opacity-20"
+                src="https://ropim.com/wp-content/uploads/2023/01/slide3.avif"
+                alt="fondo bandas transportadoras"
+            />
+        </div>
+        <InicioSeccion>
+            <h2
+                slot="title"
+                class="inline-block font-semibold text-[1.8rem] lg:text-4xl ml-6"
+            >
+                <strong>Transporte y clasificacion</strong>
+            </h2>
+        </InicioSeccion>
+    </section>
+    <div id="componentesTC" class="flex justify-center items-center flex-col gap-10">
+        <ComponentesProductos
+            title="Alineador de paquetes"
+            text="Diseñado para realizar especificaciones de mensajería de productos para alinearpaquetes singularizados antes de separarlos, y clasificarlos. Con rodillos apretados y en diseño vertical. Puede alinear paquetes, cajas o bolsas."
+            img="https://ropim.com/wp-content/uploads/2024/01/Alineador-980x626.png.webp"
+        />
+        <ComponentesProductos
+            title="Rodillos vivos"
+            text="Los transportadores de rodillo conductor usan energía para impulsar productos en cajas o paletizados a lo largo de la línea. Son una solución económica para distintas industrias y aplicaciones, lo que incluye depósitos, fabricación y distribución de bebidas. Estos rodillos motorizados utilizan un mando desmodrómico y pueden manipular cargas pesadas."
+            img="https://ropim.com/wp-content/uploads/2021/09/Transportador-curvo-de-rodillos-vivos-por-correa-480x298.jpg.webp"
+        />
+        <div
+            class="flex flex-wrap justify-center items-center gap-10 border-b-2 border-blue-950 p-4 mt-4"
+        >
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2023/08/Modelo-RV-190-300x188.jpg.webp"
+                name="Transportador RV 190"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/25LREZ-300x188.jpg.webp"
+                name="Transportador 25LREZ"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Modelo-190NSP-480x296.jpg.webp"
+                name="Transportador 190-NSP"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/09/Transportador-recto-de-rodillos-vivos-por-correa-300x277.jpg.webp"
+                name="Transportador recto"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/25-CREZD-300x188.png.webp"
+                name="Transportador RV 200"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/25-CREZD-300x188.png.webp"
+                name="Transportador 25CREZD"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Modelo-190NSPEZ-300x188.jpg.webp"
+                name="Transportador 190NSPEZ"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-ABEZ-Transportador-motorizado-para-Trabajo-Mediano-300x188.jpg.webp"
+                name="Transportador ABEZ"
+            />
+        </div>
+        <ComponentesProductos
+            title="Bandas sobre mesa"
+            text="Ropim ofrece y desarrolla bandas transportadoras que garantizan un flujo de movimiento constante a alta y baja velocidad, para piezas pequeñas empacadas o sueltas, de capacidad de carga alta, media y baja y con necesidad de adherencia a la superficie deslizante. Estos sistemas pueden configurarse a cualquier longitud, ancho de banda y velocidad. Son una opción económica y confiable para transportar productos diversos tamaños y formas."
+            img="https://ropim.com/wp-content/uploads/2020/06/Modelo-SB-Transportador-de-Banda-para-Trabajo-Mediano-300x188.jpg.webp"
+        />
+        <div
+            class="flex flex-wrap justify-center items-center gap-10 border-b-2 border-blue-950 p-4 mt-4"
+        >
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-TR-Transportador-de-Banda-con-Guardas-Laterales-300x188.jpg.webp"
+                name="Transportador TR"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-TL-Transportador-de-Banda-para-Trabajo-Pesado-300x188.jpg.webp"
+                name="Transportador TL"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-TH-Transportador-de-Banda-de-Residuos-300x188.jpg.webp"
+                name="Transportador TH"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-TA-transportadora-Banda-horizontal-300x188.jpg.webp"
+                name="Transportador TA"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/06/Modelo-SB-Transportador-de-Banda-para-Trabajo-Mediano-300x188.jpg.webp"
+                name="Transportador SB"
+            />
+        </div>
+        <ComponentesProductos
+            title="Inclinado con banda"
+            text="Bandas transportadoras diseñadas para mover productos entre diferentes elevaciones. Equipados con un alimentador impulsado por cadena y un dispositivo de transmisión doble ajustable en el extremo de descarga aseguran una transferencia suave de la superficie inclinada a la horizontal. Su velocidad puede ser continua o variable según la aplicación. Estas fajas transportadoras pueden ser usadas de forma independiente o bien de manera integrada con otros equipos de manejo de materiales."
+            img="https://ropim.com/wp-content/uploads/2020/05/Modelo-R-Transportador-de-Bandas-Plegables-de-Aluminio-300x188.jpg.webp"
+        />
+        <div
+            class="flex flex-wrap justify-center items-center gap-10 border-b-2 border-blue-950 p-4 mt-4"
+        >
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/08/TRANSPORTADORES-PORTATILES-300x188.png.webp"
+                name="Transportador portatil"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Transportador-plegable-300x188.jpg.webp"
+                name="Transportador plegable BA"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Transportador-plegable-con-retenedores-300x188.jpg.webp"
+                name="Transportador con retenedores B"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/08/Modelo-A-Transportador-de-Alum%C3%ADnio-de-Banda-Angosta.jpg.webp"
+                name="Transportador de aluminio A"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/05/Modelo-R-Transportador-de-Bandas-Plegables-de-Aluminio-300x188.jpg.webp"
+                name="Transportador de aluminio R"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Transportador-inclinado-C-300x188.jpg.webp"
+                name="Transportador inclinado C"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Transportador-inclinado-SBI-300x188.jpg.webp"
+                name="Transportador inclinado SBI"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Transportador-inclinado-RBI-300x188.jpg.webp"
+                name="Transportador inclinado RBI"
+            />
+        </div>
+        <ComponentesProductos
+            title="Transportadores de gravedad"
+            text="Los transportadores por gravedad son soluciones no motorizadas que usan la gravedad para mover los productos en los rodillos o las roldanas. Son las soluciones de manipulación de materiales más económicas y fáciles de instalar y reubicar ya que no utilizan piezas motorizadas. Se pueden instalar en líneas inclinadas o rectas en un área de envío o montaje."
+            img="https://ropim.com/wp-content/uploads/2021/10/Curva-de-rodachines-de-gravedad-300x188.jpg.webp"
+        />
+        <div
+            class="flex flex-wrap justify-center items-center gap-10 border-b-2 border-blue-950 p-4 mt-4"
+        >
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2023/01/SW-AW.avif"
+                name="Transportador de gravedad SW-AW"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2023/03/Flexible-S-tamano-grande.png"
+                name="Transportador flexible FLX"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/Curva-de-rodachines-de-gravedad-300x188.jpg.webp"
+                name="Curva de rodachines de gravedad"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2021/10/zyro-image-1.png.webp"
+                name="Transportador de gravedad de rodillos"
+            />
+        </div>
+        <ComponentesProductos
+            title="Transportadores de aeropuerto"
+            text="Transportadores usados para el transporte de equipajes, su diseño compacto, seguro y silencioso ofrece gran flexibilidad y fiabilidad de distribución, se adaptan a las necesidades extremas de alta densidad de pasajeros y están diseñado para trabajar periodos largos. Se pueden configurar en cualquier formato para adaptarse a las exigencias y especificaciones de cada aeropuerto. Su instalación puede ser por equipos individuales o integrados en un sistema de manejo de equipajes completo, además si es necesario, también pueden ampliarse o reconfigurarse."
+            img="https://ropim.com/wp-content/uploads/2022/04/aeropuertos1-300x188.jpg.webp"
+        />
+        <div
+            class="flex flex-wrap justify-center items-center gap-10 border-b-2 border-blue-950 p-4 mt-4"
+        >
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2022/04/aeropuertos1-300x188.jpg.webp"
+                name="Transportador Monoplanar Tipo Slat"
+            />
+            <CompoChiq
+                link="https://ropim.com/wp-content/uploads/2020/05/Modelo-MON-ML-002-Transportador-Monoplanar-300x188.jpg.webp"
+                name="Transportador Monoplanar Tipo Crecent/Media luna"
+            />
+            
+        </div>
+    </div>
+</Layout>

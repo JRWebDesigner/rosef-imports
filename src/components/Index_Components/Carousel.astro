@@ -1,0 +1,131 @@
+---
+import CompCarousel from "../MiniComponets/CompCarousel.astro";
+---
+
+<section
+    id="container-carousel"
+    class="relative flex items-center justify-center h-[55vh] bg-gray-200 text-white"
+>
+    <div class="z-0 absolute w-full h-full bg-[#000000f5]">
+        <img
+            class="w-full h-full object-cover opacity-20"
+            src="https://ropim.com/wp-content/uploads/2023/01/slide1.avif"
+            alt="fondo bandas transportadoras"
+        />
+    </div>
+    <div
+        id="carrusel"
+        class="w-[80%] h-full flex justify-around items-center z-10"
+    >
+        <div
+            id="c1"
+            class="comp-carrusel hidden justify-center items-center w-full h-full"
+        >
+            <h2 class="text-carousel text-center text-4xl">
+                Integramos lo mejor de la tecnologia intralogística ajustandola
+                al contexto latino
+            </h2>
+        </div>
+        <div
+            id="c2"
+            class="comp-carrusel hidden justify-center items-center gap-3 lg:gap-16"
+        >
+            <CompCarousel
+                src="./ImgCar/img1.png"
+                alt="slide1"
+                subtitle="Finales de linea"
+            />
+        </div>
+        <div
+            id="c3"
+            class="comp-carrusel hidden justify-center items-center gap-3 lg:gap-16"
+        >
+            <CompCarousel
+                src="https://ropim.com/wp-content/uploads/2023/01/slide1.avif"
+                alt="slide2"
+                subtitle="Sistemas de clasificación de cajas"
+            />
+        </div>
+        <div
+            id="c4"
+            class="comp-carrusel hidden justify-center items-center gap-3 lg:gap-16"
+        >
+            <CompCarousel
+                src="./ImgCar/img2.avif"
+                alt="slide2"
+                subtitle="Equipos para manejos de contenedores ULD y Paqueteria"
+            />
+        </div>
+        <div
+            id="c5"
+            class="comp-carrusel hidden justify-center items-center gap-3 lg:gap-16"
+        >
+            <CompCarousel
+                src="./ImgCar/img3.avif"
+                alt="slide2"
+                subtitle="Manejo de cajas con control de tráfico, automatización y control"
+            />
+        </div>
+    </div>
+    <div id="flechas" class="">
+        <button
+            class="carousel-control prev absolute top-1/2 left-3 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+            >&#10094;</button
+        >
+        <button
+            class="carousel-control next absolute top-1/2 right-3 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+            >&#10095;</button
+        >
+    </div>
+    <div id="selector"></div>
+</section>
+<style>
+    .desaparecer {
+        display: none;
+    }
+    .aparecer{
+        display: flex;
+        animation-name: aparecerAll;
+        animation-duration: 1.7s;
+    }
+    @keyframes aparecerAll {
+        0%{
+            opacity: .4;
+            transform: translateY(20%);
+            
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<script>
+    const carousel = document.querySelectorAll(".comp-carrusel");
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+    let i = 0;
+    let j;
+    carousel[i].classList.remove("desaparecer");
+    carousel[i].classList.add("aparecer");
+    j = i;
+    i++;
+    setInterval(() => {
+        if (i < carousel.length) {
+            carousel[j].classList.remove("aparecer");
+            carousel[j].classList.add("desaparecer");
+            carousel[i].classList.remove("desaparecer");
+            carousel[i].classList.add("aparecer");
+            j = i;
+            i++;
+        } else {
+            i = 0;
+            carousel[j].classList.remove("aparecer");
+            carousel[j].classList.add("desaparecer");
+            carousel[i].classList.remove("desaparecer");
+            carousel[i].classList.add("aparecer");
+            j = i;
+            i++;
+        }
+    }, 4000);
+</script>

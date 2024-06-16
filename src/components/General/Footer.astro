@@ -1,0 +1,20 @@
+---
+import Infooter from '../MiniComponets/Infooter.astro' 
+---
+<footer class="p-10 border-t-4">
+    <h2 class="text-4xl font-semibold text-center">Información</h2>
+    <div class="grid md:grid-cols-2 gap-7 py-6 px-[8vw]">
+        <Infooter title=`Dirección` icon='maps'>
+            <span class="inline-block min-w-[200px] max-w-[300px] text-xl px-3">C. Obispo Anaya # 271, Cala Cala, Cochabamba</span>
+        </Infooter>
+        <Infooter title="Teléfonos" icon="phone">
+            <div class="grid px-3">
+                <span class="text-lg">+591 74374312</span>
+                <span class="text-lg">+591 76255455</span>
+            </div>
+        </Infooter>
+        <Infooter title="Correo" icon="mail">
+            <span class="inline-block min-w-[200px] max-w-[300px] text-[1.2rem] -ml-9"><a href="mailto:ventas@rosefimportaciones.com" target="_blank">ventas@rosefimportaciones.com</a></span>
+        </Infooter>
+    </div>
+</footer>

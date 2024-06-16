@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Carousel from '../components/Index_Components/Carousel.astro';
+import Service from '../components/Index_Components/Service.astro';
+import LinkProduct from '../components/Index_Components/LinkProduct.astro';
+import Info from '../components/Index_Components/Info.astro'; 
+import LinkNosotros from '../components/Index_Components/LinkNosotros.astro';
+---
+
+<Layout title="Inicio">
+	<Carousel />
+	<Service />
+	<LinkProduct/>
+	<Info />
+	<LinkNosotros/>
+</Layout>
+
+<script>
+    const navMobileBorder=document.getElementById('nav-mobile-ul');
+    const navBorder=document.getElementById('nav-ul-comp');
+    navMobileBorder.children[0].classList.add('border-b-2');
+    navBorder.children[0].classList.add('border-b-4');
+    //navBorder.children[0].classList.add('border-red-400');
+</script>

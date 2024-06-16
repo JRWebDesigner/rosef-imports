@@ -1,0 +1,32 @@
+---
+import NavMobile from "./NavMobile.astro";
+import LogoMarca from '../Index_Components/LogoMarca.astro';
+import NavCompu from './NavCompu.astro';
+---
+
+<header class="sticky top-0 w-full z-30 flex justify-between items-center bg-gradient-to-r to-blue-950 from-black px-[10vw] md:px-[5vw] py-5 h-16 md:h-20 text-white font-bold">
+    <div class="w-[30vw]">
+        <LogoMarca />
+    </div>
+    <div class="flex items-center lg:w-[70%] lg:justify-center">
+        <NavMobile 
+            />
+        <NavCompu />
+    </div>
+</header>
+
+
+<script>
+    const menuLog=document.getElementById("menu-log");
+    const nav=document.getElementById("nav-ul-mobile");
+    menuLog.addEventListener(('click'),()=>{
+        let clase=nav.style.display;
+            if(clase==="none"){
+                nav.style.display='flex';
+            }
+            else{
+                nav.style.display='none';
+            }
+       
+    })
+</script>

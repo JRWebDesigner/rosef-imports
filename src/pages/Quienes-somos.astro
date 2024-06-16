@@ -1,0 +1,16 @@
+---
+import IniNosotro from "../components/Nosotros_Components/IniNosotro.astro";
+import VisMis from "../components/Nosotros_Components/VisMis.astro"
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Quienes Somos" indice=0>
+    <IniNosotro/>
+    <VisMis />
+</Layout>
+<script>
+    const navMobileBorder=document.getElementById('nav-mobile-ul');
+    const navBorder=document.getElementById('nav-ul-comp');
+    navMobileBorder.children[1].classList.add('border-b-2');
+    navBorder.children[1].classList.add('border-b-4');
+    //navBorder.children[1].classList.add('border-red-400');
+</script>

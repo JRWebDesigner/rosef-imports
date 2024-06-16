@@ -1,0 +1,31 @@
+---
+import ListNav from "./ListNav.astro";
+---
+<div class="md:hidden">
+    <svg id="menu-log" class="w-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    <nav id="nav-ul-mobile" class="z-20 text-sm" style="display: none;">
+        <ul id="nav-mobile-ul" class="gap-y-7 flex-col flex p-[30px] w-[80vw]">
+            <ListNav/>
+        </ul>
+    </nav>
+</div>
+<style>
+    #nav-ul-mobile{
+        position: absolute;
+        background-color: transparent;
+        top:61.5px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        transition: 3s all;
+        /*animation: Acordeon .5s infinite;*/
+    }
+    #nav-mobile-ul{
+        border-top:2px solid white;
+        background-color: rgb(0, 0, 17);
+    }
+    #nav-mobile-ul>li:hover{
+        color: rgb(177, 177, 177);
+        transition: .3s all;
+    }
+</style>

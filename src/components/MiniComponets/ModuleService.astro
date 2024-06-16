@@ -1,0 +1,7 @@
+---
+const {src, h2, link} = Astro.props;
+---
+<a href=`${link}` class="w-[48%] flex flex-col justify-center items-center md:w-[20vw]">
+        <img src=`./Icons/${src}.png` alt={src} width="75" height="75"/>
+        <h2 class="text-center text-lg">{h2}</h2>
+</a>

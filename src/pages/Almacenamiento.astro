@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro'
+import InicioSeccion from "../components/MiniComponets/InicioSeccion.astro";
+import ComponentesProductos from '../components/Productos_Components/ComponentesProductos.astro';
+---
+<Layout title="Productos">
+    <section id="linkProd" class="relative h-[30vh] lg:h-[80vh] w-full flex items-center justify-center text-white font-semibold">
+        <div class="absolute w-full h-full bg-[#000000ce]">
+            <img class="w-full h-full object-cover opacity-20" src="https://ropim.com/wp-content/uploads/2023/01/slide3.avif" alt="fondo bandas transportadoras">
+        </div>
+        <InicioSeccion>
+           <h2 slot="title" class="inline-block font-semibold text-[1.8rem] lg:text-4xl ml-6">
+            <strong>Almacenamiento</strong>    
+            </h2> 
+        </InicioSeccion>
+        </section> 
+        <div class="flex justify-center items-center flex-col gap-10">
+            <ComponentesProductos title="Miniload" text="Es un sistema de almacenamiento automatizado para cajas o bandejas en el que se integran las estanterías, los transelevadores que llegan hasta la mercancía y un programa de gestión de almacenamiento para coordinar este proceso." img="https://ropim.com/wp-content/uploads/2023/01/almacenamiento2.avif">
+            </ComponentesProductos>
+            <ComponentesProductos title="Transelevadores" text="Los transelevadores hacen posible manejar altas velocidades de desplazamiento y aceleración usando diferentes dispositivos para toma de carga adaptados a las características de operación de cada empresa. El transelevador le permite definir individualmente la altura, la anchura y la longitud de su almacén." img="https://ropim.com/wp-content/uploads/2023/01/Transelevadores.avif">
+            </ComponentesProductos>
+            <ComponentesProductos title="Shuttle" text="Sistema de almacenamiento automático de gran capacidad estática." img="https://ropim.com/wp-content/uploads/2023/01/almacenamiento3.avif">
+            </ComponentesProductos>
+            <ComponentesProductos title="Estanteria Picking" text="Sistema idóneo para almacenes de productos perecederos, aplicable a cualquier sector de la industria y distribución (alimentación, automoción, industria farmacéutica, química, etc.). Las estanterías incorporan caminos de rodillos con una ligera pendiente que permite el deslizamiento de pallets, por gravedad y a velocidad controlada, hasta el extremo contrario." img="https://ropim.com/wp-content/uploads/2023/01/image0049.avif">
+            </ComponentesProductos>
+            <ComponentesProductos title="Pick to light" text="Es un sistema de preparación de pedidos dotado de estanterías dinámicas y visores numéricos para ayudar al operario a saber dónde se encuentra exactamente el producto que tiene que recoger y el número de unidades. " img="https://ropim.com/wp-content/uploads/2024/04/DSC01148-1.png">
+            </ComponentesProductos>
+        </div>
+</Layout>

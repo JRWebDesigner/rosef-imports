@@ -1,0 +1,14 @@
+---
+import ButtonLink from "./ButtonLink.astro";
+const {subtitle, src, alt}=Astro.props;
+---
+
+<img
+    class="img-carousel hidden md:block w-[50vw] max-h-[40vh] object-scale-down"
+    src=`${src}`
+    alt=`${alt}`
+/>
+<div class="text-carousel flex flex-col justify-center gap-7 items-center font-bold">
+    <h2 class="text-center text-4xl">{subtitle}</h2>
+    <ButtonLink Link="Productos" TextLink="Ver más" />
+</div>

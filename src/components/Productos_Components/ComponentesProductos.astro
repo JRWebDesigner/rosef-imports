@@ -1,0 +1,17 @@
+---
+const { title, text, img } = Astro.props;
+---
+<div class="m-10 flex flex-col md:grid md:grid-cols-2 gap-8 p-3 place-items-center border-b-2 border-blue-900 shadow-lg w-[70%]">
+    <img
+        class="w-[70%] inline-block"
+        src=`${img}`
+        alt=`magenes de ${title}`
+    />
+    <div>
+        <h3 class="text-xl text-blue-950">{title}</h3>
+        <p>
+            {text}
+        </p>
+        <a href=""> <slot/> </a>
+    </div>
+</div>

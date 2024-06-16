@@ -1,0 +1,28 @@
+---
+const { title} = Astro.props;
+import Header from '../components/General/Header.astro';
+import Footer from '../components/General/Footer.astro';
+import Whatsapp from '../components/General/whatsapp.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+	</head>
+	<body class="bg-gray-100">
+		<Header 
+			/>
+		<main class="relative">
+			<slot />
+			<Whatsapp />
+		</main>
+		<Footer />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+	</body>
+</html>
+
