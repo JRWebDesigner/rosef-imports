@@ -1,13 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import InicioSeccion from "../components/MiniComponets/InicioSeccion.astro";
 ---
+
 <Layout title="Contactos">
-    
+    <section
+        id="linkProd"
+        class="relative h-[50vh] lg:h-[80vh] w-full flex items-center justify-center text-white font-semibold"
+    >
+        <div class="absolute w-full h-full bg-[#000000ce]">
+            <img
+                class="w-full h-full object-cover opacity-20"
+                src="https://ropim.com/wp-content/uploads/2023/01/slide3.avif"
+                alt="fondo bandas transportadoras"
+            />
+        </div>
+        <InicioSeccion>
+            <div slot="title">
+                <h2
+                    class="inline-block font-semibold text-5xl lg:text-4xl ml-6"
+                >
+                    <strong>Contáctenos</strong>
+                </h2>
+                <br />
+                <br />
+                <br />
+                <p class="ml-5">
+                    Atenderemos todos sus requerimientos de movimiento de cajas
+                    y paquetes en centros de distribución o finales de línea de
+                    producción. Por favor contáctenos, estudiaremos su necesidad
+                    y le ofreceremos una solución que se adapte a su entorno
+                    empresarial.
+                </p>
+            </div>
+        </InicioSeccion>
+    </section>
 </Layout>
 <script>
-    const navMobileBorder=document.getElementById('nav-mobile-ul');
-    const navBorder=document.getElementById('nav-ul-comp');
-    navMobileBorder.children[3].classList.add('border-b-2');
-    navBorder.children[3].classList.add('border-b-4');
+    const navMobileBorder = document.getElementById("nav-mobile-ul");
+    const navBorder = document.getElementById("nav-ul-comp");
+    navMobileBorder.children[3].classList.add("border-b-2");
+    navBorder.children[3].classList.add("border-b-4");
     //navBorder.children[3].classList.add('border-red-400');
 </script>
