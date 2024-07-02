@@ -1,16 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
 import InicioSeccion from "../components/MiniComponets/InicioSeccion.astro";
 ---
+
 <Layout title="Productos-Surtido de Pedidos">
-    <section id="linkProd" class="relative h-[30vh] lg:h-[80vh] w-full flex items-center justify-center text-white font-semibold">
+    <section
+        id="linkProd"
+        class="relative h-[30vh] lg:h-[40vh] w-full flex items-center justify-center text-white font-semibold"
+    >
         <div class="absolute w-full h-full bg-[#000000ce]">
-            <img class="w-full h-full object-cover opacity-20" src="https://ropim.com/wp-content/uploads/2023/01/slide3.avif" alt="fondo bandas transportadoras">
+            <img
+                class="w-full h-full object-cover opacity-20"
+                src="https://ropim.com/wp-content/uploads/2023/01/slide2.avif"
+                alt="fondo bandas transportadoras"
+            />
         </div>
         <InicioSeccion>
-           <h2 slot="title" class="inline-block font-semibold text-[1.8rem] lg:text-4xl ml-6">
-            <strong>Surtido de Pedidos</strong>    
-            </h2> 
+            <h2
+                slot="title"
+                class="inline-block font-semibold text-[1.8rem] lg:text-4xl ml-6"
+            >
+                <strong>Surtido de Pedidos</strong>
+            </h2>
         </InicioSeccion>
-    </section> 
+    </section>
 </Layout>
