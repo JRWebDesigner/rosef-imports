@@ -1,7 +1,7 @@
 ---
 const {link,name}=Astro.props;
 ---
-<div class="relative flex justify-center w-[250px] shadow-md">
+<div class="relative flex flex-col justify-center w-[250px] shadow-md">
+    <a class="w-[100%] p-2 text-white bg-blue-950" href="">{name}</a>
     <img src=`${link}` alt=`imagen de ${name}`>
-    <a class="w-[70%] p-2 absolute bottom-0 text-white bg-blue-950" href="">{name}</a>
 </div>
