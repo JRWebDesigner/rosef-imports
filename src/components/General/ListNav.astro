@@ -7,21 +7,18 @@
     >
 </li>
 <div id="prod" class="nav_li-p">
-    <div class="flex"><img src="./Icons/package.svg" alt="icon Productos" /> PRODUCTOS</div>
-    <nav id="liprod" class="md:absolute hidden md:top-[100%] md:bg-gradient-to-r to-blue-950 from-black p-4 text-white md:border-t-2">
-        <ul id="prod-ul" class="bg-transparent grid gap-6 md:text-sm">
-            <li><a href="./Almacenamiento">-ALMACENAMIENTO</a></li>
-            <li>
-                <a href="./Transporte-Clasificacion">-TRANSPORTE Y CLASIFICACIÓN</a>
-            </li>
-            <li><a href="./Finales-de-linea">-FINALES DE LINEA</a></li>
-            <li><a href="./Soporte-y-Servicio-Tecnico">-SOPORTE Y SERVICIO TECNICO</a></li>
-            <li><a href="./Manejo-de-Información">-MANEJO DE INFORMACIÓN,<br> CONTROL Y AUTOMATIZACIÓN</a></li>
-        </ul>
+    <div class="flex"><img src="./Icons/package.svg" alt="icon Productos" />PRODUCTOS</div>
+    <nav id="liprod" class=" hidden md:absolute md:w-[17vw] md:top-[100%] md:bg-gradient-to-r to-blue-950 from-black p-4 text-white md:border-t-2">
+            <ul id="prod-ul" class="bg-transparent grid gap-6 md:text-sm">
+                <li><a href="./Almacenamiento">-ALMACENAMIENTO</a></li>
+                <li>
+                    <a href="./Transporte-Clasificacion">-TRANSPORTE Y CLASIFICACIÓN</a>
+                </li>
+                <li><a href="./Finales-de-linea">-FINALES DE LINEA</a></li>
+                <li><a href="./Soporte-y-Servicio-Tecnico">-SOPORTE Y SERVICIO TECNICO</a></li>
+                <li><a href="./Manejo-de-Información">-MANEJO DE INFORMACIÓN,<br> CONTROL Y AUTOMATIZACIÓN</a></li>
+            </ul>
     </nav>
-    <div id="liprod" class=>
-        
-    </div>
 </div>
 <li class="nav_li">
     <a href="./Contactos">
@@ -39,6 +36,7 @@
         height: 100%;
         margin: 0 20px;
     }
+    
     #prod:hover > #liprod {
             display: flex;
             flex-direction: column;
@@ -69,8 +67,8 @@
         gap: 10px;
         width: 100%;
         height: 100%;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-    }
+        }
     }
 </style>
